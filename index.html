@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al-Mannur Nigeria Enterprises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #7B3F00, #C49E48);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 3rem 2rem;
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .about, .contact {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Al-Mannur Nigeria Enterprises</h1>
+    <p>We are dealers of all kinds of provisions such as Flour, Sugar, Spaghetti, Macaroni, Indomie, Cooking Oil and so much more.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p style="margin-top: 1rem;">Al-Mannur Nigeria Enterprises is a reputable company located in Sabon Gari Main Market, Zaria. We specialize in the distribution and wholesale of essential Nigerian foodstuffs and provisions. With years of trusted service, we cater to retailers, supermarkets, and households.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://i.imgur.com/CnUwnLu.jpg" alt="Bag of Sugar">
+      <img src="https://i.imgur.com/V8oXvdh.jpg" alt="Bag of Flour">
+      <img src="https://i.imgur.com/yqapg0A.jpg" alt="Golden Penny Spaghetti">
+      <img src="https://i.imgur.com/vY9e6aP.jpg" alt="Cooking Oil">
+      <img src="https://i.imgur.com/FszEMdy.jpg" alt="Provision Store">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p style="margin-top: 1rem;">WhatsApp: <a href="https://wa.me/2348036065968" target="_blank">08036065968</a></p>
+    <p>Phone: 08036065968</p>
+    <p>Location: Aminu Way, Sabon Gari Main Market, Sabon Gari Zaria, Kaduna.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Al-Mannur Nigeria Enterprises. All rights reserved.</p>
+  </footer>
+</body>
+</html>
