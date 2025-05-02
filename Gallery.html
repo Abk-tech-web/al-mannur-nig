@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Al-Mannur Nigeria Enterprises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #7B3F00, #C49E48);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+    <p>Explore our store and products</p>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1590080877755-9a94350965c0" alt="Bag of Sugar">
+      <img src="https://images.unsplash.com/photo-1609501678342-7a4bda61c9b1" alt="Bag of Flour">
+      <img src="https://images.unsplash.com/photo-1625871374703-6ed0bb0db1de" alt="Golden Penny Spaghetti">
+      <img src="https://images.unsplash.com/photo-1615484477820-0ed0849c6122" alt="Cooking Oil">
+      <img src="https://images.unsplash.com/photo-1556911073-52527ac437f5" alt="Provision Store View">
+      <img src="https://images.unsplash.com/photo-1590080878086-3e77fdf2fbc3" alt="Foodstuff Display">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Al-Mannur Nigeria Enterprises. All rights reserved.</p>
+  </footer>
+</body>
+</html>
